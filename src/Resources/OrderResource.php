@@ -31,6 +31,8 @@ final class OrderResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-shopping-cart';
 
+    protected static string|\UnitEnum|null $navigationGroup = 'Billing Operations';
+
     public static function form(Schema $schema): Schema
     {
         return $schema->components([TextInput::make('currency')->required()->length(3)->default('USD'), TextInput::make('subtotal_minor')->required()->integer()->minValue(0), TextInput::make('discount_minor')->integer()->minValue(0), TextInput::make('tax_minor')->integer()->minValue(0)]);
