@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.liberu.dev/module/v1.json",
-  "name": "billing-orders-filament",
+  "name": "module-billing-orders-filament",
   "display_name": "Billing Orders Filament",
   "description": "Filament 5 adapter for Billing Orders.",
   "version": "0.1.0",
@@ -10,7 +10,7 @@
     "php": "^8.5",
     "laravel": "^13.0",
     "packages": {
-      "liberusoftware/billing-orders": "^0.1",
+      "liberusoftware/module-billing-orders": "^0.1",
       "liberusoftware/module-manager": "^1.0"
     }
   },

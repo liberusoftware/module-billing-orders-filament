@@ -20,6 +20,8 @@ use Liberu\Billing\Orders\Models\Cart;
 
 final class CartResource extends Resource
 {
+    protected static string|\UnitEnum|null $navigationGroup = 'Customers & Sales';
+
     use ScopesCurrentTeam;
 
     protected static ?string $model = Cart::class;

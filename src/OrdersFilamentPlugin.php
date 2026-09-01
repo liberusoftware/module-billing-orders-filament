@@ -19,7 +19,7 @@ final class OrdersFilamentPlugin implements Plugin
 
     public function getId(): string
     {
-        return 'liberu-billing-orders';
+        return 'module-billing-orders-filament';
     }
 
     public function register(Panel $panel): void
